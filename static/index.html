@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's A Portfolio Website</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="ticker">
+                <div class="wrapper"><p>WHAT'S ON MY MIND: Currently working on my portfolio website, it's pretty neat...</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="left">
+                    <div class="photo">
+                    </div>
+                    <div class="self-assessment">
+                        <h3>Self-Assessment</h3>
+                        <p>Java <span class="rating">★★★★★</span></p>
+                        <p>Java Spring <span class="rating">★★★⯪☆</span></p>
+                        <p>Python <span class="rating">★★★★⯪</span></p>
+                        <p>HTML <span class="rating">★★★★★</span></p>
+                        <p>CSS <span class="rating">★★★⯪☆</span></p>
+                        <p>JavaScript <span class="rating">★★★☆☆</span></p>
+                        <p>Databases <span class="rating">★★★★★</span></p>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Contact Me</h2>
+                        <form action="https://formspree.io/f/manevyok" method="POST">
+                            <label for="name">Your Name:</label>
+                            <input type="text" name="name" id="name" required>
+
+                            <label for="email">Your Email:</label>
+                            <input type="email" name="email" id="email" required>
+
+                            <label for="message">Your Message:</label>
+                            <textarea name="message" id="message" rows="5" required></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <p class="direct-email">You can also directly email: <span>Markelle.Ngishu@gmail.com</span></p>
+                </div>
+                <div class="right">
+                    <div class="about">
+                        <p>Yellow!</p>
+                        <p>My name is Markelle Ngishu. I am an artist and programmer that primarily works in full-stack web development. I graduated with a bachelor's in Computer Science from Western Governors University in 2025 and am looking forward to more opportunities to grow in my skills.</p>
+                        <div class="links">
+                            <a href="css/Resume%20April%202025.pdf" class="resume" target="_blank">Resume</a>
+                            <a href="https://github.com/markelle-ngishu" class="github" target="_blank">GitHub</a>
+                            <a href="" class="work-history" hidden>Work History</a>
+                        </div>
+                    </div>
+                    <div class="recent-projects">
+                        <div class="introduction"><h2>Recent Projects</h2>
+                            <div class="legend"><span class="empty-star tooltip" >☆<span class="tooltip-text">Unfinished Project</span></span><span class="full-star tooltip">★<span class="tooltip-text">Finished Project</span></span></div></div>
+
+                        <div class="projects">
+                            <div class="project-element"><a href="https://github.com/markelle-ngishu/Spam-Detection-with-Machine-Learning" target="_blank">
+                                <h5 class="title">
+                                    Spam Detection With Machine Learning <span>★</span>
+                                </h5>
+                                <p class="description">
+                                    This project implements a spam email classifier using ensemble machine learning techniques. It leverages feature selection, hyperparameter tuning, and stacking to optimize classification performance.
+                                </p>
+                                <p class="skills"><b>Skills: </b><span>Python, AI Machine Learning, Databases</span></p>
+                                </a></div>
+
+                            <div class="project-element"><a href="https://github.com/markelle-ngishu/Package-Delivery-System" target="_blank">
+                                <h5 class="title">
+                                    Package Delivery System <span>★</span>
+                                </h5>
+                                <p class="description">
+                                    This project simulates a package delivery system for WGUPS (Western Governors University Postal Service). It calculates optimized delivery routes for three trucks and ensures all packages are delivered efficiently, adhering to specific constraints and requirements. Features
+                                </p>
+                                <p class="skills"><b>Skills: </b><span>Python, Algorithms, Databases</span></p>
+                            </a></div>
+
+                            <div class="project-element"><a href="https://github.com/markelle-ngishu/vacation_backend" target="_blank">
+                                <h5 class="title">
+                                    Hotel Reservation and Trip Planning Site Backend <span>★</span>
+                                </h5>
+                                <p class="description">
+                                    This project involves developing a modern Java Spring backend for a travel agency’s vacation bookings application. The goal was to migrate mission-critical functionalities from an outdated 1990s backend to a more maintainable and scalable framework, addressing tech debt and enhancing data request handling.
+                                </p>
+                                <p class="skills"><b>Skills: </b><span>Java, Spring Boot, Databases, Back End</span></p>
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

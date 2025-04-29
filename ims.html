@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMS Home</title>
     <link rel="stylesheet" href="ims-style.css">
     <style>
@@ -19,6 +20,11 @@
 <body>
 <div class="heading">
     <img src="ims-assets/IMS_Banner_Logo.png" alt="IMS Logo">
+    <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     <nav class="nav">
         <ul class="nav_items">
             <li><a href="not-available.html">Home</a></li>
@@ -107,8 +113,16 @@
 </div>
 
 <script>
-    // Alternative approach to handle all clickable elements
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
+        // Hamburger menu functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
         // Make all elements with class 'element' clickable
         const elements = document.querySelectorAll('.element');
         elements.forEach(element => {

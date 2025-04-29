@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMS Home</title>
+    <link rel="stylesheet" href="ims-style.css">
+    <style>
+        /* Add this style to make product elements clickable */
+        .element {
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .element:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+<div class="heading">
+    <img src="ims-assets/IMS_Banner_Logo.png" alt="IMS Logo">
+    <nav class="nav">
+        <ul class="nav_items">
+            <li><a href="not-available.html">Home</a></li>
+            <li><a href="not-available.html">About IMS</a></li>
+            <li><a href="not-available.html">Products and Services</a></li>
+            <li><a href="not-available.html">Contact</a></li>
+            <li><a href="not-available.html">Careers</a></li>
+            <li><a href="not-available.html">Secure Portal</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="hero">
+    <video autoplay muted loop id="myVideo">
+        <source src="ims-assets/hero-sequence.mp4" type="video/mp4">
+    </video>
+    <div class="hero_text">
+        <h1>Welcome to IMS</h1>
+        <p>Explore our website and see how IMS (Integrated Machinery Solutions) can help your company be more profitable, efficient, reliable, and safe</p>
+        <div class="call-to-action">
+            <button id="PS" onclick="window.location.href='not-available.html'">Products and Services</button>
+            <button id="C" onclick="window.location.href='not-available.html'">Contact</button>
+        </div>
+    </div>
+</div>
+<div class="border"></div>
+<div class="main">
+    <article class="ims">
+        <h2>Integrated Machinery Solutions</h2>
+        <div class="column">
+            <div class="left">
+                <p>IMS is an engineering and manufacturing firm whose purpose is to provide value to our customers through the engineering, design, and manufacturing of custom equipment solutions. We provide value to our customers by improving the profitability, reliability, and safety of their process and equipment.</p>
+                <p>To accomplish this, IMS has assembled a team of experts that is unmatched in the industry. we have experts in the area of:</p>
+                <ul>
+                    <li>Applications and Systems Design</li>
+                    <li>Structural Engineering</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Manufacturing and Production</li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="ims-assets/Machine_Shop.jpg" alt="IMS Warehouse">
+            </div>
+        </div>
+    </article>
+    <article class="products-and-services">
+        <h2>Products and Services</h2>
+        <div class="element-container">
+            <div class="element hoists" onclick="window.location.href='not-available.html'">
+                <p>Hoists</p>
+            </div>
+            <div class="element end-trucks" onclick="window.location.href='not-available.html'">
+                <p>End Trucks</p>
+            </div>
+            <div class="element gearing-and-gearboxes" onclick="window.location.href='not-available.html'">
+                <p>Gearing and Gearboxes</p>
+            </div>
+            <div class="element loadblocks" onclick="window.location.href='not-available.html'">
+                <p>Loadblocks</p>
+            </div>
+            <div class="element below-the-hook" onclick="window.location.href='not-available.html'">
+                <p>Below-the-Hook Devices</p>
+            </div>
+            <div class="element custom-equipment" onclick="window.location.href='not-available.html'">
+                <p>Custom Equipment</p>
+            </div>
+            <div class="element engineering" onclick="window.location.href='not-available.html'">
+                <p>Engineering Services</p>
+            </div>
+            <div class="element manufacturing" onclick="window.location.href='not-available.html'">
+                <p>Manufacturing Services</p>
+            </div>
+            <div class="element limit-switches" onclick="window.location.href='not-available.html'">
+                <p>Limit Switches</p>
+            </div>
+        </div>
+    </article>
+    <article class="ending">
+        <div class="left">
+            <img src="ims-assets/Home_Footer.jpg" alt="blue room">
+        </div>
+        <div class="right">
+            <p>IMS is one of the few, if not the only, organizations in our respective industry that is focused on Lean Organizational Techniques and continuous improvement throughout the entire organization.</p>
+            <button class="A" onclick="window.location.href='not-available.html'">About Us</button>
+        </div>
+    </article>
+</div>
+
+<script>
+    // Alternative approach to handle all clickable elements
+    document.addEventListener('DOMContentLoaded', function() {
+        // Make all elements with class 'element' clickable
+        const elements = document.querySelectorAll('.element');
+        elements.forEach(element => {
+            element.addEventListener('click', function() {
+                window.location.href = 'not-available.html';
+            });
+        });
+
+        // Make all buttons clickable (alternative to onclick attributes)
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                window.location.href = 'not-available.html';
+            });
+        });
+    });
+</script>
+</body>
+</html>

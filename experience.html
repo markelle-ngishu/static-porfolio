@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Experience</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #75aae9;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .resume-container {
+      background-color: white;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .back-button {
+      background-color: #e8a514;
+      color: #2c3e50;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #fdca5b;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #e8a514;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .experience {
+      margin-bottom: 40px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #2980b9;
+    }
+
+    .job-date {
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    .company {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 5px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    li:before {
+      content: "•";
+      color: #e8a514;
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+<div class="resume-container">
+
+  <h1>Professional Experience</h1>
+
+  <div class="experience">
+    <div class="job-header">
+      <span class="job-title">Website Manager</span>
+      <span class="job-date">2020-2024</span>
+    </div>
+    <div class="company">Main Street Altus, Altus, OK</div>
+    <ul>
+      <li>Promoted from Website Development Intern to Website Manager after successfully designing and launching the official website for Main Street Altus, demonstrating technical expertise and initiative.</li>
+      <li>Spearheaded the development of a user-friendly website interface to showcase community events, initiatives, and resources, driving increased engagement and participation.</li>
+      <li>Managed website traffic, optimized performance, and ensured the accuracy of event information, resulting in a reliable and up-to-date platform for the community.</li>
+      <li>Collaborated with organizational leaders to align website features with community goals, enhancing user experience and supporting strategic objectives.</li>
+      <li>Oversaw IT and tech support for the website, troubleshooting issues and implementing solutions to maintain seamless functionality.</li>
+    </ul>
+  </div>
+
+  <div class="experience">
+    <div class="job-header">
+      <span class="job-title">Private Tutor</span>
+      <span class="job-date">2022-2024</span>
+    </div>
+    <ul>
+      <li>Provided personalized academic support to students in various subjects, tailoring teaching methods to individual learning styles.</li>
+      <li>Assisted students with homework, test preparation, and concept reinforcement, resulting in improved grades and academic confidence.</li>
+      <li>Developed customized lesson plans and study strategies to address specific learning challenges.</li>
+      <li>Tracked student progress and adapted teaching approaches to maximize learning outcomes.</li>
+    </ul>
+  </div>
+
+  <div class="experience">
+    <div class="job-header">
+      <span class="job-title">Tech Center Ambassador</span>
+      <span class="job-date">2020-2022</span>
+    </div>
+    <div class="company">Southwest Technology Center, Altus, OK</div>
+    <ul>
+      <li>Guided children and parents in selecting the most suitable academic programs, focusing on Business and Computer Technology and Graphic Design.</li>
+      <li>Provided detailed program overviews, answering questions to help families make informed decisions about educational pathways.</li>
+    </ul>
+  </div>
+  <button class="back-button" onclick="window.history.back()">← Back</button>
+</div>
+
+
+<script>
+  // Alternative method if history.back() doesn't work
+  document.querySelector('.back-button').addEventListener('click', function() {
+    window.history.back();
+  });
+</script>
+</body>
+</html>
